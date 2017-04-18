@@ -10,7 +10,7 @@ export class TweetsService{
         return [
             {
                 image: "http://lorempixel.com/100/100/people?",
-                displayName: "WINNER",
+                displayName: "MINO",
                 username: "winner-winner",
                 text: "Lorem Ipsum",
                 isLiked: false,
