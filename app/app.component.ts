@@ -7,7 +7,7 @@ import { TweetsService } from './tweets.service'
             `
 })
 export class AppComponent {
-  tweets;
+  tweets: any[];
   constructor(private tweetsService: TweetsService){
     this.tweets = tweetsService.getTweets();
   }

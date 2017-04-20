@@ -1,12 +1,5 @@
 export class TweetsService{
-    getTweets(): {
-        image: string,
-        displayName: string,
-        username: string,
-        text: string,
-        isLiked: boolean,
-        numLikes: number
-    }[]{
+    getTweets() {
         return [
             {
                 image: "http://lorempixel.com/100/100/people?",
