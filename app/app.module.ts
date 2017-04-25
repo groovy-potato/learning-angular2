@@ -11,11 +11,15 @@ import { FavoriteComponent } from './favorite.component';
 import { LikeComponent } from './like.component';
 import { VoteComponent } from './vote.component';
 import { TweetComponent } from './tweet.component';
-
+import { ZippyComponent } from './zippy.component';
+import { SubscribeComponent } from './subscribe.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {SignUpFormComponent} from './signup-form.component'
+import { ChangePasswordComponent } from './change-password.component'
 
 
 @NgModule({
-  imports:      [ BrowserModule ],
+  imports:      [ BrowserModule, ReactiveFormsModule, FormsModule ],
   declarations: [ 
     AppComponent,
     CoursesComponent,
@@ -24,7 +28,11 @@ import { TweetComponent } from './tweet.component';
     FavoriteComponent,
     LikeComponent,
     VoteComponent,
-    TweetComponent
+    TweetComponent,
+    ZippyComponent,
+    SubscribeComponent,
+    SignUpFormComponent,
+    ChangePasswordComponent
     ],
     providers: [
       CourseService,

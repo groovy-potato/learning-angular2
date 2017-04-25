@@ -7,16 +7,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var SubscribeComponent = (function () {
+    function SubscribeComponent() {
     }
-    return AppComponent;
+    SubscribeComponent.prototype.onSubmit = function (form) {
+        console.log(form);
+    };
+    return SubscribeComponent;
 }());
-AppComponent = __decorate([
+SubscribeComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        template: "\n        <change-password></change-password>\n    "
+        selector: "subscribe",
+        templateUrl: "app/subscribe.component.html"
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], SubscribeComponent);
+exports.SubscribeComponent = SubscribeComponent;
+//# sourceMappingURL=subscribe.component.js.map

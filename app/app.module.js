@@ -19,6 +19,11 @@ var favorite_component_1 = require("./favorite.component");
 var like_component_1 = require("./like.component");
 var vote_component_1 = require("./vote.component");
 var tweet_component_1 = require("./tweet.component");
+var zippy_component_1 = require("./zippy.component");
+var subscribe_component_1 = require("./subscribe.component");
+var forms_1 = require("@angular/forms");
+var signup_form_component_1 = require("./signup-form.component");
+var change_password_component_1 = require("./change-password.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -26,7 +31,7 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
+        imports: [platform_browser_1.BrowserModule, forms_1.ReactiveFormsModule, forms_1.FormsModule],
         declarations: [
             app_component_1.AppComponent,
             courses_component_1.CoursesComponent,
@@ -35,7 +40,11 @@ AppModule = __decorate([
             favorite_component_1.FavoriteComponent,
             like_component_1.LikeComponent,
             vote_component_1.VoteComponent,
-            tweet_component_1.TweetComponent
+            tweet_component_1.TweetComponent,
+            zippy_component_1.ZippyComponent,
+            subscribe_component_1.SubscribeComponent,
+            signup_form_component_1.SignUpFormComponent,
+            change_password_component_1.ChangePasswordComponent
         ],
         providers: [
             course_service_1.CourseService,

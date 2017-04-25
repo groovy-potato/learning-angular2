@@ -1,15 +1,11 @@
-import { Component } from '@angular/core';
-import { TweetsService } from './tweets.service'
+import {Component} from '@angular/core';
+
+
 @Component({
-  selector: 'my-app',
-  template: `
-            <tweet *ngFor="let item of tweets" [tweet]="item"></tweet>
-            `
+    selector: 'my-app',
+    template: `
+        <change-password></change-password>
+    `
 })
 export class AppComponent {
-  tweets: any[];
-  constructor(private tweetsService: TweetsService){
-    this.tweets = tweetsService.getTweets();
-  }
-
- }
+}
